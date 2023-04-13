@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      form {
+        max-width: 300px;
+        margin: 50px auto;
+      }
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 5px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Technology Blog</h1>
+    <p>
+      Please fill out the form below to submit your blog for review. We will
+      review your blog and get back to you as soon as possible.
+    </p>
+    <form>
+      <label for="blog-title">Blog Title</label>
+      <input type="text" id="blog-title" name="blog-title" />
+      <label for="blog-url">Blog URL</label>
+      <input type="text" id="blog-url" name="blog-url" />
+      <label for="blog-description">Blog Description</label>
+      <textarea id="blog-description" name="blog-description"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

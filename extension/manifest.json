@@ -1,0 +1,47 @@
+{
+  "name": "FormFiller5000",
+  "version": "0.1.0",
+  "description": "Automagically fill out forms using ChatGPT",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["http://*/*", "https://*/*", "*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["utils.js", "contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png",
+      "128": "assets/ext-icon.png"
+    },
+    "default_title": "FormFiller5000 | Automagically fill out forms using ChatGPT",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/ext-icon.png",
+    "24": "assets/ext-icon.png",
+    "32": "assets/ext-icon.png",
+    "128": "assets/ext-icon.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "manifest_version": 3
+}

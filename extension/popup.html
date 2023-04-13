@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormFiller5000 Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: 20px;
+      }
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        margin-top: 20px;
+      }
+      button.enabled {
+        background-color: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FormFiller5000</h1>
+    <button id="toggle-button">Fill Form</button>
+    <form id="option-form">
+      <label for="api-key">API Key</label>
+      <input type="password" id="api-key" name="api-key" />
+      <button type="submit">Save</button>
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>
